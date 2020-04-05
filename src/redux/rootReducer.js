@@ -1,7 +1,14 @@
+import {ADD_LINE} from './types'
+
 const initialState = {
-  counter:0
+  default: {name: '', mark: false}
 }
 
 export default function rootReducer(state = initialState, action){
-  return state
+  switch (action.type) {
+    case ADD_LINE:
+      return state
+    default:
+      return state
+  }
 }
