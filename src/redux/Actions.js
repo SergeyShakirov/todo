@@ -1,6 +1,6 @@
-import {ADD_LINE} from './types'
+import {ADD_LINE} from './Types'
 
-export default function addLine() {
+export default function AddLine() {
   return ({
     type: ADD_LINE
   })
